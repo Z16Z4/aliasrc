@@ -1,0 +1,35 @@
+#!/bin/sh
+
+alias \
+   ...="cd .." \
+   ....="cd -" \
+   audio="scream -i virbr0" \
+   down="docker-compose down" \
+   up="docker-compose up -d" \
+   wallpaper='xwinwrap -g 1920x1080 -ni -s -nf -b -un -ov -fdt -argb -- mpv --mute=yes --no-audio --no-osc --no-osd-bar --quiet --screen=0 --geometry=1920x1080+0+0 -wid WID --loop $1' \
+   music='mpc update && ncmpcpp' \
+   clone='git clone' \
+   paas="docker ps -a" \
+   coins='cointop' \
+   erase='shred -uzvn3' \
+   github="cat ~/repo/token && git push" \
+   p='keep' \
+   detach='tmux detach' \
+   attach='tmux attach' \
+   fuck='sudo $(history -p !!)' \
+   gimme='sudo pacman -S' \
+   yeet='sudo pacman -R' \
+   ip='curl ifconfig.me/ip' \
+   enter='docker exec -it' \
+   die='sudo shutdown -r now' \
+   sesh='tmux a -t $1' \
+   ksesh='tmux kill-ses -t $1' \
+   gpgs='pg --keyserver keyserver.ubuntu.com --search-keys $1' \
+   yt='utfzf -t' \
+   nsesh='tmux new -s $1' \
+   mine='sudo sysctl -w vm.nr_hugepages=128 && sudo ./xmr-stak-rx --noTest' \
+   relax='sudo pacman -Syu' \
+   l='tmux ls' \
+   copy-alias='sudo cp /home/$USER/repo/aliasrc/aliasrc /home/$USER/.config/aliasrc' \
+   
+
